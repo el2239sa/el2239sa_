@@ -1,15 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-  <head>
-    <meta charset="UTF-8">
-    <title>自我介紹</title>
-    
-
-  </head>
-    
-  <body>
-  <!DOCTYPE html><html class="dark stitch-anim-fade-in" lang="zh-Hant" style="scroll-behavior: smooth;"><head>
+<!DOCTYPE html><html class="dark stitch-anim-fade-in" lang="zh-Hant" style="scroll-behavior: smooth;"><head>
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
 <title>Elsa's Portal with Fandom Image Addition</title>
@@ -81,7 +70,7 @@
 <h2 class="text-lg font-semibold tracking-wide text-white">自我介紹</h2>
 </div>
 <div class="space-y-3">
-<p class="text-sm text-white/90 leading-relaxed font-normal">大家好我是小李，也可以叫我Elsa（其實比起小李更喜歡大家叫我Elsa，雖然我的英文名字叫Melody）<br class=""><br class="">70%在murmur現生、15%在講團兵、10%在開箱周邊，剩下5%在夢艾爾文<br class=""><br class="">很偶爾會有18🈲發言<br class=""><br class="">常轉發追星或留友看肌肉男跟奇奇怪怪的東西<br class=""><br class="">動漫只看過巨人跟獵人，獵人最喜歡西索</p>
+<p class="text-sm text-white/90 leading-relaxed font-normal">大家好我是小李，也可以叫我Elsa（其實比起小李更喜歡大家叫我Elsa，雖然我的英文名字叫Melody）<br class=""><br class="">70%在murmur現生、15%在請團兵、10%在開箱周邊，剩下5%在夢艾爾文<br class=""><br class="">很偶爾會有18🈲發言<br class=""><br class="">常轉發追星或留友看肌肉男跟奇奇怪怪的東西<br class=""><br class="">動漫只看過巨人跟獵人，獵人最喜歡西索</p>
 </div>
 </section>
 <section class="grid grid-cols-3 gap-3" id="gallery">
@@ -121,58 +110,46 @@
 <h2 class="text-lg font-semibold tracking-wide text-white">雷點 (Triggers)</h2>
 </div>
 <div class="space-y-3">
-<p class="text-sm text-white/90 leading-relaxed font-normal">
-生理上無法接受里維是攻艾爾文是受，但友列po不會雷<br class=""><br class="">
-把任何CP叫成對家。對方是你的對家，但不是我的，不要把我預設立場<br class=""><br class="">
+<p class="text-sm text-white/90 leading-relaxed font-normal">生理上無法接受里維是攻艾爾文是受但友列po不會雷<br class=""><br class="">
+把任何CP講成對家，對方是你的對家，但不是我的，不要把我預設立場<br class=""><br class="">
 沒禮貌、曲解別人意思的人<br class=""><br class="">
-不開心但不直接講才一次大爆炸的人，所以我的個性是不開心會直接講，被很多人講過講話很直，可能會雷到你
-</p>
+不開心但不直接講才一次大爆炸的人，所以我的個性是不開心會直接講，被很多人講過講話很直，可能會雷到你</p>
 </div>
 </section>
 </div>
 </main>
-<nav class="mt-12 mb-2 sticky bottom-4 z-10">
-<div class="flex items-center justify-between px-2 py-3 glass-card rounded-full backdrop-blur-xl">
-<button class="flex flex-col items-center gap-1 flex-1 transition-opacity text-white" onclick="location.href='#intro'">
+<nav class="mt-12 mb-2 sticky bottom-4 z-10"><div class="flex items-center justify-between px-2 py-3 glass-card rounded-full backdrop-blur-xl">
+<button class="flex flex-col items-center gap-1 flex-1 transition-opacity text-white" onclick="updateActive(this, 'intro')">
 <span class="material-symbols-outlined text-[22px]">person</span>
 <span class="text-[8px] uppercase tracking-wider font-bold">Intro</span>
 </button>
-<button class="flex flex-col items-center gap-1 flex-1 transition-opacity opacity-40 hover:opacity-100 text-white" onclick="location.href='#cp'">
+<button class="flex flex-col items-center gap-1 flex-1 transition-opacity opacity-40 hover:opacity-100 text-white" onclick="updateActive(this, 'cp')">
 <span class="material-symbols-outlined text-[22px]">favorite</span>
 <span class="text-[8px] uppercase tracking-wider font-bold">CP</span>
 </button>
-<button class="flex flex-col items-center gap-1 flex-1 transition-opacity opacity-40 hover:opacity-100 text-white" onclick="location.href='#fandom'">
+<button class="flex flex-col items-center gap-1 flex-1 transition-opacity opacity-40 hover:opacity-100 text-white" onclick="updateActive(this, 'fandom')">
 <span class="material-symbols-outlined text-[22px]">star</span>
 <span class="text-[8px] uppercase tracking-wider font-bold">Fandom</span>
 </button>
-<button class="flex flex-col items-center gap-1 flex-1 transition-opacity opacity-40 hover:opacity-100 text-white" onclick="location.href='#triggers'">
+<button class="flex flex-col items-center gap-1 flex-1 transition-opacity opacity-40 hover:opacity-100 text-white" onclick="updateActive(this, 'triggers')">
 <span class="material-symbols-outlined text-[22px]">warning</span>
 <span class="text-[8px] uppercase tracking-wider font-bold">Triggers</span>
 </button>
 </div>
-</nav>
-
+<script>
+function updateActive(btn, sectionId) {
+    const nav = btn.closest('nav');
+    const buttons = nav.querySelectorAll('button');
+    buttons.forEach(b => {
+        b.classList.add('opacity-40', 'hover:opacity-100');
+    });
+    btn.classList.remove('opacity-40', 'hover:opacity-100');
+    document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+}
+</script></nav>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
 
 </body></html>
-    
-  </body>
-  
-</html>
