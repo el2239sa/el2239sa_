@@ -1,2 +1,178 @@
-<!DOCTYPE html> <html lang="zh-Hant"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>@el2239sa_ Portal</title> <style> /* 基礎設定與深藍深綠漸層背景 */ body { margin: 0; padding: 0; background: linear-gradient(180deg, #0A192F 0%, #05261E 100%); color: white; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; display: flex; flex-direction: column; align-items: center; min-height: 100vh; padding-bottom: 60px; } /* 頭部區域 */ .header { text-align: center; margin: 60px 0 30px; } .avatar { width: 140px; height: 140px; border-radius: 50%; object-fit: cover; border: none; box-shadow: 0 10px 30px rgba(0,0,0,0.3); } .username { font-size: 28px; font-weight: bold; margin-top: 15px; } .tagline { font-size: 16px; opacity: 0.7; margin-top: 5px; } /* 內容卡片樣式 */ .card { width: 90%; max-width: 420px; background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-radius: 25px; padding: 25px; margin-bottom: 20px; box-sizing: border-box; border: 1px solid rgba(255, 255, 255, 0.1); } .card-header { font-weight: bold; margin-bottom: 12px; font-size: 19px; border-bottom: 1px solid rgba(255, 255, 255, 0.1); padding-bottom: 10px; } .card-body { line-height: 1.7; font-size: 15px; color: rgba(255, 255, 255, 0.9); } /* 三圖展示區 */ .gallery { width: 90%; max-width: 420px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 20px; } .gallery img { width: 100%; aspect-ratio: 1 / 1; border-radius: 16px; object-fit: cover; background: rgba(255, 255, 255, 0.05); } /* 追星區塊的大圖 */ .fandom-img { width: 100%; border-radius: 18px; margin-top: 15px; display: block; } /* 強調文字 */ strong { color: #fff; } </style> </head> <body> <!-- 個人頭像與帳號 --> <div class="header"> <img src="https://i.ibb.co/pvcy5fH0/606511301-17870929359498090-482119982708584516-n.jpg" class="avatar"> <div class="username">@el2239sa_</div> <div class="tagline">追星八年鬼轉二次元同人女</div> </div> <!-- 自我介紹 --> <div class="card"> <div class="card-header">👤 自我介紹</div> <div class="card-body"> 大家好我是小李，你也可以叫我 Elsa。<br><br> 平常 30% 發的是周邊開箱、<br> 30% 在罵進擊的巨人又出新周邊又要花錢、<br> 30% 在 murmur 日常、<br> 剩下 10% 在 夢艾爾文。<br><br> 偶爾會有18🈲暴言慎追 </div> </div> <!-- 圖片展示區 --> <div class="gallery"> <img src="https://i.ibb.co/rnpnhqy/D3-E569-B1-1-BF4-4068-8391-3226721-ADBEB.jpg" alt="Gallery 1"> <img src="https://i.ibb.co/kg28mz0H/S-117145623.jpg" alt="Gallery 2"> <img src="https://i.ibb.co/cczdFS9Y/5-FE23-D0-E-95-AF-4-F00-A8-F2-11-C16-E21-A876.jpg" alt="Gallery 3"> </div> <!-- CP 資訊 --> <div class="card"> <div class="card-header">❤️ CP</div> <div class="card-body"> <strong>進擊的巨人</strong><br> 團兵不逆不拆<br> 不雷任何CP 友列po什麼我都吃一點 </div> </div> <!-- 追星 --> <div class="card"> <div class="card-header">追星</div> <div class="card-body"> 追Seventeen和BTS八年多了<br> 本命是尹淨漢<br> 對我來說除了我爸我媽世界上最重要的人就是他<br> 任何貶低他、拿他來跟任何人比較我都會封鎖你<br> <img src="https://i.ibb.co/TMXNFxQG/S-117145629.jpg" class="fandom-img" alt="Jeonghan"> </div> </div> <!-- 雷點 --> <div class="card"> <div class="card-header">⚠️ 雷點</div> <div class="card-body"> 生理上無法接受里維是攻艾爾文是受，但友列po不會雷<br><br> 雷把任何CP叫成對家。對方是你的對家，但不是我的，不要把我預設立場 </div> </div> </body> </html>
-   
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>自我介紹</title>
+    
+
+  </head>
+    
+  <body>
+  <!DOCTYPE html><html class="dark stitch-anim-fade-in" lang="zh-Hant" style="scroll-behavior: smooth;"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Elsa's Portal with Fandom Image Addition</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "deep-navy": "#0a192f",
+                        "deep-forest": "#064e3b"
+                    },
+                    fontFamily: {
+                        "sans": ["Inter", "Noto Sans TC", "system-ui", "-apple-system", "sans-serif"]
+                    }
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        :root {
+            --bg-gradient: linear-gradient(180deg, #0a192f 0%, #064e3b 100%);
+        }
+        body {
+            background: var(--bg-gradient);
+            background-attachment: fixed;
+            font-family: 'Inter', 'Noto Sans TC', sans-serif;
+            min-height: 100dvh;
+            color: rgba(255, 255, 255, 0.95);
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="selection:bg-white/20">
+<div class="relative flex min-h-screen w-full flex-col px-6 py-12 max-w-md mx-auto">
+<header class="flex flex-col items-center mb-10">
+<div class="mb-6">
+<div class="rounded-full h-32 w-32 overflow-hidden shadow-2xl ring-4 ring-white/5">
+<img alt="Profile Avatar" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7zlbDK6x7UDqgDu_xA6oqSHuNjDb9kDZRWTOTDWGWZZmiNq1O23h_EMmnxaDkQhsyexcySJzz6006NCh59yHJy8RULw_jlQcVZq89TF4wSWCdpsK73ePoGK9GMTMfUZ0rR8JgKW4AiUC33XplNgmgc0nIWRi2b9gGDauiZwCIpJb4SUCxBlo3FjX6d7WpirOqtor6UqGUMp1B5zB1rYJl6uIx3jmB_idi0gm9nBnqCAkU45x4yvus-B4_sqhbFW_v1ikedJJhFafi">
+</div>
+</div>
+<div class="text-center">
+<h1 class="text-2xl font-bold tracking-tight mb-1 text-white">@el2239sa_</h1>
+<p class="text-white/80 text-sm font-medium tracking-wide">追星快十年鬼轉二次元同人女</p>
+</div>
+</header>
+<main class="flex-1 flex flex-col gap-6">
+<section class="glass-card rounded-3xl p-6" id="intro">
+<div class="flex items-center gap-2 mb-3">
+<span class="material-symbols-outlined text-white/50 text-lg">person</span>
+<h2 class="text-lg font-semibold tracking-wide text-white">自我介紹</h2>
+</div>
+<div class="space-y-3">
+<p class="text-sm text-white/90 leading-relaxed font-normal">大家好我是小李，也可以叫我Elsa（其實比起小禮更喜歡大家叫我Elsa，雖然我的英文名字叫Melody）<br class=""><br class="">70%在murmur現生、15%在講團兵、10%在開箱周邊，剩下5%在夢艾爾文<br class=""><br class="">很偶爾會有18🈲發言<br class=""><br class="">常轉發追星或留友看肌肉男跟奇奇怪怪的東西<br class=""><br class="">動漫只看過巨人跟獵人，獵人最喜歡西索</p>
+</div>
+</section>
+<section class="grid grid-cols-3 gap-3" id="gallery">
+<div class="aspect-square glass-card rounded-2xl overflow-hidden"><div class="w-full h-full bg-center bg-cover" style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuAawn1YMcS4WchL96uU4oowS8EfhkEPfVzW4szG4QTgHJ8M5Qq-2OXRPQs87C5e3cePnHosjzeweicAMuzbO3qtPqVOL3P4RYanVtc7KuOuwpx7xG7JZ1s3lI0T9aT-CHhtFsz2-amTpHC5EiPWv-qj5RtqAH2206hk9AZ5R-qHxCgMWK23xaVR6vvx9rRdo1_UMpZ83634ZcpedzT_q8nDsI8ETHF1T300do6Gni-TE8tBkVMxX-SDUWQ_STgNarEs4OfmBFN0pXN_&quot;);"></div></div>
+<div class="aspect-square glass-card rounded-2xl overflow-hidden"><div class="w-full h-full bg-center bg-cover" style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuAQDJEAKsgaKmDSyworW7Jcs5gCtJYv55rP76QvjEE9yaVAQmasvGxGiNLT32QpY5RH2cblxNDVpyRDMdPHSsNPbbKHtUCeO_KYoB6AWMcnkvW-fkf-Q7oGpvxBs0fRbLzp5CXPfCKg1_nD3kUBf0UxSFA5UzILq0qYRcWlNEjzVHzh5H-BJlv6kHkJW1AyQV2uTOa9mkdR51B0VGnnq8-E1BXNFcsUM5aoTRDluYUKfszGDq5KVwhBq2f-PhRHDULLAtfbFpLX7EHf&quot;);"></div></div>
+<div class="aspect-square glass-card rounded-2xl overflow-hidden"><div class="w-full h-full bg-center bg-cover" style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuCCSWdJCBxzwexGTeIe1BSFu8qHjBmf07zKNZLiDRdC74D7EwcEiDtWiiKT7yhdeunDoJMWH-17ATDbpkfEG2xvBpeU2Y_MWumMlrjGe6gW_CZuwxILupu83CK_3VlgwzApmSbj57Fd5Q7QJqkiZbV54NqqgMh7ydeEeeS4M3Ak0_t_aMcpEHLyYJQ4i8nLAp0bExtlXI6gpmMKO5cYzp8FU2NkoU_NlMQtP4a9GqcTOTqS3yJ9Bn_uHgUopvW1Do4zE1llh8fxQcPc&quot;);"></div></div>
+</section>
+<div class="flex flex-col gap-6">
+<section class="glass-card rounded-3xl p-6" id="cp">
+<div class="flex items-center gap-2 mb-3">
+<span class="material-symbols-outlined text-white/50 text-lg">favorite</span>
+<h2 class="text-lg font-semibold tracking-wide text-white">CP</h2>
+</div>
+<div class="space-y-1">
+<div class="text-sm text-white/90 leading-relaxed font-normal">
+<strong class="font-bold text-white block mb-1">進擊的巨人</strong>
+                            團兵不逆不拆<br>
+                            不雷任何CP 友列po什麼我都吃一點
+                        </div>
+</div>
+</section>
+<section class="glass-card rounded-3xl p-6" id="fandom">
+<div class="flex items-center gap-2 mb-3">
+<span class="material-symbols-outlined text-white/50 text-lg">star</span>
+<h2 class="text-lg font-semibold tracking-wide text-white">追星</h2>
+</div>
+<div class="space-y-4">
+<p class="text-sm text-white/90 leading-relaxed font-normal">從2017年開始追Seventeen跟BTS<br class=""><br class="">本命是尹淨漢<br class=""><br class="">任何貶低他、拿他跟任何人比較我都會封鎖你</p>
+<div class="flex justify-center mt-4">
+<img alt="Fandom Image" class="w-full h-auto object-cover rounded-[15px] shadow-lg border border-white/10" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQywEjv2ykRvdAPJTERbkQu3vakj4Q-QmtgjIW0dNd1ap4aUFpzi6bX3-qLGifLCu5lSVs8k8W1STSae3-HpgG_CXvbBXxIqRw2ZaI05MKLIiuJayooEgOWFecfpul-6V8lIcmBKHTIZtgTg5l7MjcqDHQkjR4DgQqKn5nDsYkKwHLfW9cFC7bUEtZKoDYgn8h7ZOreMDfnoSucwLNCOZ_2hYFkpbCHKvF5Nr5MD1c9-C-tYpvdsGLuYN_EzqakALNAfaI3viAwYo9">
+</div>
+</div>
+</section>
+<section class="glass-card rounded-3xl p-6" id="triggers">
+<div class="flex items-center gap-2 mb-3">
+<span class="material-symbols-outlined text-white/50 text-lg">warning</span>
+<h2 class="text-lg font-semibold tracking-wide text-white">雷點 (Triggers)</h2>
+</div>
+<div class="space-y-3">
+<p class="text-sm text-white/90 leading-relaxed font-normal">
+生理上無法接受里維是攻艾爾文是受，但友列po不會雷<br class=""><br class="">
+把任何CP叫成對家。對方是你的對家，但不是我的，不要把我預設立場<br class=""><br class="">
+沒禮貌、曲解別人意思的人<br class=""><br class="">
+不開心但不直接講才一次大爆炸的人，所以我的個性是不開心會直接講，被很多人講過講話很直，可能會雷到你
+</p>
+</div>
+</section>
+</div>
+</main>
+<nav class="mt-12 mb-2 sticky bottom-4 z-10">
+<div class="flex items-center justify-between px-2 py-3 glass-card rounded-full backdrop-blur-xl">
+<button class="flex flex-col items-center gap-1 flex-1 transition-opacity text-white" onclick="location.href='#intro'">
+<span class="material-symbols-outlined text-[22px]">person</span>
+<span class="text-[8px] uppercase tracking-wider font-bold">Intro</span>
+</button>
+<button class="flex flex-col items-center gap-1 flex-1 transition-opacity opacity-40 hover:opacity-100 text-white" onclick="location.href='#cp'">
+<span class="material-symbols-outlined text-[22px]">favorite</span>
+<span class="text-[8px] uppercase tracking-wider font-bold">CP</span>
+</button>
+<button class="flex flex-col items-center gap-1 flex-1 transition-opacity opacity-40 hover:opacity-100 text-white" onclick="location.href='#fandom'">
+<span class="material-symbols-outlined text-[22px]">star</span>
+<span class="text-[8px] uppercase tracking-wider font-bold">Fandom</span>
+</button>
+<button class="flex flex-col items-center gap-1 flex-1 transition-opacity opacity-40 hover:opacity-100 text-white" onclick="location.href='#triggers'">
+<span class="material-symbols-outlined text-[22px]">warning</span>
+<span class="text-[8px] uppercase tracking-wider font-bold">Triggers</span>
+</button>
+</div>
+</nav>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body></html>
+    
+  </body>
+  
+</html>
